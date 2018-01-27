@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Muli');
+body {
+	background-image: url(img/map.jpeg);
+	background-repeat: no-repeat;
+  	background-size: cover;
+  	margin: 0 auto;
+  	height: 100vh;
+  	font-family: 'Muli', sans-serif;
+}
+* {
+	box-sizing: border-box;
+}
+.container {
+	padding: 5%;
+	opacity: 0.8;
+}
+
+button {
+	font-family: 'Muli', sans-serif;
+}
