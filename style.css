@@ -1,20 +1,45 @@
 @import url('https://fonts.googleapis.com/css?family=Muli');
 body {
-	background-image: url(img/map.jpeg);
-	background-repeat: no-repeat;
-  	background-size: cover;
   	margin: 0 auto;
-  	height: 100vh;
   	font-family: 'Muli', sans-serif;
 }
 * {
 	box-sizing: border-box;
 }
 .container {
-	padding: 5%;
+	background-image: url(img/map.jpeg);
+	background-repeat: no-repeat;
+  	background-size: cover;
+  	height: 100vh;
 	opacity: 0.8;
 }
-
+.text {
+	padding: 5%;
+}
 button {
 	font-family: 'Muli', sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	padding: 3px 5px;
+	cursor: pointer;
+	background-color: #3498db;
+}
+input {
+	font-size: 18px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	padding: 3px;
+	background-color: #dfe4ea;
+}
+button, input {
+	border-radius: 5px;
+	border: 1px solid blue;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+}
+@media (max-width:768px) {
+	.container {
+		background-image: url(img/map-min.png);
 }
