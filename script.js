@@ -1,21 +1,22 @@
-var url = 'https://restcountries.eu/rest/v1/name/';
+var url = 'https://restcountries.eu/rest/v2/region/';
 var countriesList = $('#countries');
+
 
 $('#search').click(searchCountries);
 
 function searchCountries() {
-  	var countryName = $('#country-name').val();
-  	if(!countryName.length) countryName = 'Poland';
+  	regionName = $('#region-name').val();
+  	if(!regionName.length) regionName = 'No data';
   	$.ajax({
-  		url: url + countryName,
+  		url: url + regionName,
   		method: 'GET',
   		success: showCountriesList
   	});
 }
 
 function showCountriesList(resp) {
-	countriesList.empty();
-	resp.forEach(function(item){
-   		$('<li>').text(item.name).appendTo(countriesList);
+  countriesList.empty();
+  resp.forEach(function(item){
+      $('<li>').text(item.name).appendTo(countriesList);
 });
 }
