@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Muli');
 body {
   	font-family: 'Muli', sans-serif;
-  	background-color: #ecf1f2;
 }
 * {
 	box-sizing: border-box;
@@ -26,23 +25,23 @@ body {
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
-.container {
-	width: 100%;
-	margin: 0 auto;
+html {
+	background: url(img/background-light.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 [class*="col-"] {
 	float: left;
 	min-height: 1px;
 	padding: 5px;
 }
-
 .text {
-	padding: 5%;
+	padding: 2% 5%;
 }
-img {
-	padding: 5%;
-	width: 100%;
-	height: auto;
+li {
+	font-weight: bold;
 }
 
 button {
@@ -63,10 +62,9 @@ input {
 }
 button, input {
 	border-radius: 5px;
-	border: 1px solid #a5c8db;
+	border: 0.5px solid #5389a5;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
-
 @media (max-width: 767px) {
 
     .col-s-1 {width: 8.33%;}
